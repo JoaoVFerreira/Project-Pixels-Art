@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 30px;
+    background-image: url(/img/rainbow.jpg);
+}
+
+h1 {
+    text-align: center;
+    font-size: 8vh;
+    margin-bottom: 10px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 4vh;
+}
+
+
+.color {
+    display: inline-block;
+}
+
+#black {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: black
+    
+} 
+
+#red {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    display: inline-block;
+}
+
+#yellow {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    display: inline-block;
+}
+
+#blue {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color:blue;
+    display: inline-block;
+}
+
+#pixel-board {
+    border-collapse: collapse;
+}
+
+.pixel {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+/*#clear-board {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}*/ 
+
+#board-size {
+    width: 125px;
+    /*border: none;*/
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#color-palette {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+
+.btn {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100px;
+    height: 35px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.btn:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.btn:active {
+    color: #000
+}
+
+.btn:active:after {
+    background: transparent;
+}
+
+.btn:hover:before {
+    opacity: 1;
+}
+
+.btn:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+#botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabela-pixels{
+    padding-top: 25px;
+    display: table;
+    margin: auto;
+}
