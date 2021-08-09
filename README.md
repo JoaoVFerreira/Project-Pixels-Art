@@ -8,4 +8,6 @@ Este foi um projeto no qual eu trabalhei com HTML, CSS, JavaScript e tive meu pr
 - O botão SIZE é responsável pelo tamanho do quadro definido pelo usuário!
 - Apenas a cor preto é estático as outras são geradas aleatoriamente!
 
-![alt text](http://url/to/img.png)
+
+![alt text](https://github.com/JoaoVFerreira/Project-Pixels-Art/blob/main/paleta-de-cores.png)
+
